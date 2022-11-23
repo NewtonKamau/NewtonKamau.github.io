@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ NewtonKamau.github.io/portfolio }}
+      url: https://newtonkamau.github.io/portfollio/
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
