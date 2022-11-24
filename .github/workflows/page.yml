@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://newtonkamau.github.io/portfollio/
+      url: https://newtonkamau.github.io/portfollio
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
