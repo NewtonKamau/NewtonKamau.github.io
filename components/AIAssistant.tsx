@@ -223,7 +223,7 @@ export default function AIAssistant({
             {
               role: "assistant" as const,
               content:
-                "Sorry, I'm having trouble connecting right now. Please try again! 😅",
+                "Hi there! 👋 I'm Newton's AI assistant, but I'm currently running in static mode. Feel free to explore the portfolio and use the contact form to reach out directly! You can also check out my projects and experience showcased on this site. �",
               timestamp: new Date(),
             },
           ];
