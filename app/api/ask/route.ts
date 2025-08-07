@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     console.error("API route error:", err);
 
     // Handle specific error cases
-    const errorMessage = err instanceof Error ? err.message : 'Unknown error';
+    const errorMessage = err instanceof Error ? err.message : "Unknown error";
     if (errorMessage.includes("GROQ_API_KEY")) {
       return NextResponse.json(
         {
