@@ -69,7 +69,7 @@ export default function HeroSection({
             stiffness: 100,
           }}
         >
-          {getGreeting()}, I'm Newton Kamau
+          {getGreeting()}, I&apos;m Newton Kamau
         </motion.h1>
         <motion.p
           className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-medium px-4"

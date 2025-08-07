@@ -16,11 +16,12 @@ export async function POST(req: Request) {
     const result = await callGroq(messages);
     console.log("AI Response:", result);
     return NextResponse.json({ result });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("API route error:", err);
 
     // Handle specific error cases
-    if (err.message.includes("GROQ_API_KEY")) {
+    const errorMessage = err instanceof Error ? err.message : 'Unknown error';
+    if (errorMessage.includes("GROQ_API_KEY")) {
       return NextResponse.json(
         {
           error: "API configuration error. Please check environment variables.",
@@ -29,7 +30,7 @@ export async function POST(req: Request) {
       );
     }
 
-    if (err.message.includes("Groq API request failed")) {
+    if (errorMessage.includes("Groq API request failed")) {
       return NextResponse.json(
         { error: "External API error. Please try again later." },
         { status: 502 }

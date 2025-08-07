@@ -42,7 +42,7 @@ export default function InfoModal({ isOpen, onClose }: InfoModalProps) {
           </p>
 
           <p className="text-sm md:text-base">
-            This isn't just another portfolio - it's your personal gateway to
+            This isn&apos;t just another portfolio - it&apos;s your personal gateway to
             discovering what makes me tick as a developer!
           </p>
 

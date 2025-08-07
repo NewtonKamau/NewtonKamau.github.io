@@ -12,7 +12,7 @@ interface SmartVoiceOrbProps extends UseVoiceOrbOptions {
   showParticles?: boolean;
   enableHover?: boolean;
   withMotion?: boolean;
-  motionProps?: any;
+  motionProps?: Record<string, unknown>;
   onClick?: () => void;
   activeByDefault?: boolean;
 }
