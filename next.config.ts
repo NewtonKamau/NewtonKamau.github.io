@@ -4,8 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // GitHub Pages doesn't support image optimization
   },
-  basePath: "/NewtonKamau.github.io", // if your repo is not a user/organization page
-  assetPrefix: "/NewtonKamau.github.io/", // same as basePath
+  // No basePath or assetPrefix needed for user/organization pages (username.github.io)
 };
 
 export default nextConfig;
