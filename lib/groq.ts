@@ -89,7 +89,7 @@ export async function callGroq(messages: { role: string; content: string }[]) {
         Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
       },
       body: JSON.stringify({
-        model: "llama3-8b-8192", // Updated to a more commonly available model
+        model: "llama-3.1-8b-instant", // Updated to a more commonly available model
         messages: messagesWithSystem,
         temperature: 0.7,
       }),
