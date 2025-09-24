@@ -1,4 +1,5 @@
 // lib/groq.ts
+export const dynamic = "force-dynamic";
 
 export const SYSTEM_PROMPT = {
   role: "system",
