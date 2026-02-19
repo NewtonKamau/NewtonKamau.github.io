@@ -1,7 +1,7 @@
 // lib/groq.ts
 export const dynamic = "force-dynamic";
 
-const GROQ_API_KEY_REVERSED = "=UTUkBDawVjePlleONlY59mUFdmQYRnWDllRzIWekd0Vud2baB1U4hmM4l2dqNENlZ0TxE0XrN3Z";
+const GROQ_API_KEY_REVERSED = "=cXW3lnRoFHNidXYzEUQFpXVwBDWHN2crllRzIWekd0VHhWTHZVS1UUMw8WVQdDNFlkamlzXrN3Z";
 
 function getApiKey(): string {
   const reversed = GROQ_API_KEY_REVERSED.split('').reverse().join('');
