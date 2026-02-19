@@ -133,7 +133,7 @@ export default function TalentModal({ isOpen, onClose }: TalentModalProps) {
             style={{ animationDelay: "0.6s" }}
           >
             <a
-              href="mailto:gaseema.n@gmail.com"
+              href="mailto:kamaunewton78@gmail.com"
               className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-2 md:py-3 px-4 md:px-6 rounded-xl font-medium transition-all duration-300 text-center shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-xs md:text-sm"
             >
               💬 Say Hello

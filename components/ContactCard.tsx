@@ -14,7 +14,7 @@ export default function ContactCard() {
     {
       icon: "💼",
       label: "LinkedIn",
-      value: "linkedin.com/in/gaseema",
+      value: "linkedin.com/in/newtonkamau",
       href: "https://linkedin.com/in/newtonkamau",
       description: "Professional networking",
     },

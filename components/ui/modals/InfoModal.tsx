@@ -85,7 +85,7 @@ export default function InfoModal({ isOpen, onClose }: InfoModalProps) {
 
           <div className="mt-4 md:mt-6">
             <a
-              href="https://github.com/Gaseema/ai-portfolio"
+              href="https://github.com/NewtonKamau/NewtonKamau.github.io"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-gradient-to-r from-slate-900 to-slate-700 hover:from-slate-800 hover:to-slate-600 text-white py-2 md:py-3 px-4 md:px-6 rounded-xl font-medium transition-all duration-200 text-center flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 text-xs md:text-sm"
