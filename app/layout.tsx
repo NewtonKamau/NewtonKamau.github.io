@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
@@ -18,30 +21,19 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Newton Kamau – PHP/JavaScript Developer",
-  description:
-    "Newton Kamau is a skilled full-stack developer with deep expertise in PHP and JavaScript. He builds high-performance, secure, and scalable web applications — from dynamic dashboards to complex transaction systems — powering mobile and web platforms handling millions in value.",
-  icons: {
-    icon: [
-      {
-        url: "/favicon.svg",
-        type: "image/svg+xml",
-      },
-      {
-        url: "/favicon.ico",
-        type: "image/x-icon",
-      },
-    ],
-  },
-};
-
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  useEffect(() => {
+    // Client-side redirect from GitHub Pages to Vercel
+    if (typeof window !== "undefined" && window.location.hostname === "newtonkamau.github.io") {
+      window.location.replace("https://newton-kamau.vercel.app" + window.location.pathname + window.location.search);
+    }
+  }, []);
+
   return (
     <html lang="en">
       <body
