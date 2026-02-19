@@ -16,8 +16,8 @@ An interactive, AI-powered portfolio built with Next.js, React, and Tailwind CSS
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Gaseema/ai-portfolio.git
-cd ai-portfolio
+git clone https://github.com/NewtonKamau/NewtonKamau.github.io.git
+cd NewtonKamau.github.io
 ```
 
 ### 2. Install Dependencies
@@ -255,7 +255,7 @@ Run this on your Lightsail instance:
 
 ```bash
 # Download and run the setup script
-wget https://raw.githubusercontent.com/Gaseema/ai-portfolio/main/deployment/setup-server.sh
+wget https://raw.githubusercontent.com/NewtonKamau/NewtonKamau.github.io/main/deployment/setup-server.sh
 chmod +x setup-server.sh
 ./setup-server.sh
 ```
@@ -265,7 +265,7 @@ chmod +x setup-server.sh
 ```bash
 # Clone your repository
 cd /opt/bitnami/apache/htdocs/
-git clone https://github.com/Gaseema/ai-portfolio.git
+git clone https://github.com/NewtonKamau/NewtonKamau.github.io.git
 cd ai-portfolio
 
 # Install dependencies and build
@@ -325,12 +325,13 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🆘 Need Help?
 
-- Check the [Issues](https://github.com/Gaseema/ai-portfolio/issues) for common problems
+- Check the [Issues](https://github.com/NewtonKamau/NewtonKamau.github.io/issues) for common problems
 - Create a new issue if you find a bug
-- Join the discussion in [Discussions](https://github.com/Gaseema/ai-portfolio/discussions)
+- Join the discussion in [Discussions](https://github.com/NewtonKamau/NewtonKamau.github.io/discussions)
 
 ---
 
-Built with ❤️ by [Gaseema](https://github.com/Gaseema)
-#   T e s t   d e p l o y m e n t  
+Built with ❤️ by [NewtonKamau](https://github.com/NewtonKamau)
+#   T e s t   d e p l o y m e n t 
+ 
  
