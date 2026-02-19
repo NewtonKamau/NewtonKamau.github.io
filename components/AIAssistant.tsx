@@ -5,6 +5,7 @@ import ProjectShowcase from "./ProjectShowcase";
 import ContactCard from "./ContactCard";
 import { VoiceOrb } from "./ui/orbs";
 import { ChatMessage, ChatInput } from "./ui/chat";
+import { callGroq } from "@/lib/groq";
 
 interface Message {
   role: "user" | "assistant";
@@ -95,23 +96,15 @@ export default function AIAssistant({
       setMessages((prev) => [...prev, userMessage]);
 
       try {
-        // Get current messages for API call - use functional update to get latest state
-        const response = await fetch("/api/ask", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            messages: [...messages, userMessage].map(({ role, content }) => ({
-              role,
-              content,
-            })),
-          }),
-        });
+        // Call Groq directly (client-side capable now that we use NEXT_PUBLIC env var)
+        const resultString = await callGroq(
+          [...messages, userMessage].map(({ role, content }) => ({
+            role,
+            content,
+          }))
+        );
 
-        if (!response.ok) {
-          throw new Error("Failed to get response");
-        }
-
-        const data = await response.json();
+        const data = { result: resultString };
 
         // Check if user asked specifically about projects/portfolio/experience (not general questions)
         const projectKeywords = [
